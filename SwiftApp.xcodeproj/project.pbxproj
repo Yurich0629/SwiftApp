@@ -47,6 +47,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		607FAE022AA0A3370060E55C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B8125B0A2A9FDF44005A3184 /* MainViewController.swift */,
+				60EB59D72AA07F6A00A60396 /* OwnersViewController.swift */,
+				607FADFA2AA091DD0060E55C /* SettingsViewController.swift */,
+				607FADFC2AA092C10060E55C /* TopicViewController.swift */,
+				607FADFE2AA09F4F0060E55C /* SubtopicTableViewController.swift */,
+				607FAE002AA0A1E40060E55C /* DetailedInfoViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		607FAE032AA0A34A0060E55C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B8125B0C2A9FDF44005A3184 /* Main.storyboard */,
+				B8125B112A9FDF45005A3184 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		607FAE042AA0A3670060E55C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B8125B0F2A9FDF45005A3184 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		607FAE052AA0A39A0060E55C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B8125B062A9FDF44005A3184 /* AppDelegate.swift */,
+				B8125B082A9FDF44005A3184 /* SceneDelegate.swift */,
+				B8125B142A9FDF45005A3184 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		B8125AFA2A9FDF44005A3184 = {
 			isa = PBXGroup;
 			children = (
@@ -66,18 +106,10 @@
 		B8125B052A9FDF44005A3184 /* SwiftApp */ = {
 			isa = PBXGroup;
 			children = (
-				B8125B062A9FDF44005A3184 /* AppDelegate.swift */,
-				B8125B082A9FDF44005A3184 /* SceneDelegate.swift */,
-				B8125B0A2A9FDF44005A3184 /* MainViewController.swift */,
-				60EB59D72AA07F6A00A60396 /* OwnersViewController.swift */,
-				607FADFA2AA091DD0060E55C /* SettingsViewController.swift */,
-				607FADFC2AA092C10060E55C /* TopicViewController.swift */,
-				607FADFE2AA09F4F0060E55C /* SubtopicTableViewController.swift */,
-				607FAE002AA0A1E40060E55C /* DetailedInfoViewController.swift */,
-				B8125B0C2A9FDF44005A3184 /* Main.storyboard */,
-				B8125B0F2A9FDF45005A3184 /* Assets.xcassets */,
-				B8125B112A9FDF45005A3184 /* LaunchScreen.storyboard */,
-				B8125B142A9FDF45005A3184 /* Info.plist */,
+				607FAE052AA0A39A0060E55C /* App */,
+				607FAE022AA0A3370060E55C /* ViewControllers */,
+				607FAE032AA0A34A0060E55C /* Storyboards */,
+				607FAE042AA0A3670060E55C /* Resources */,
 			);
 			path = SwiftApp;
 			sourceTree = "<group>";
@@ -308,7 +340,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SwiftApp/Info.plist;
+				INFOPLIST_FILE = SwiftApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -338,7 +370,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SwiftApp/Info.plist;
+				INFOPLIST_FILE = SwiftApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
