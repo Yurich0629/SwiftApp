@@ -10,6 +10,7 @@
 		607FADFB2AA091DD0060E55C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FADFA2AA091DD0060E55C /* SettingsViewController.swift */; };
 		607FADFD2AA092C10060E55C /* TopicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FADFC2AA092C10060E55C /* TopicViewController.swift */; };
 		607FADFF2AA09F4F0060E55C /* SubtopicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FADFE2AA09F4F0060E55C /* SubtopicTableViewController.swift */; };
+		607FAE012AA0A1E40060E55C /* DetailedInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FAE002AA0A1E40060E55C /* DetailedInfoViewController.swift */; };
 		60EB59D82AA07F6A00A60396 /* OwnersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EB59D72AA07F6A00A60396 /* OwnersViewController.swift */; };
 		B8125B072A9FDF44005A3184 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8125B062A9FDF44005A3184 /* AppDelegate.swift */; };
 		B8125B092A9FDF44005A3184 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8125B082A9FDF44005A3184 /* SceneDelegate.swift */; };
@@ -23,6 +24,7 @@
 		607FADFA2AA091DD0060E55C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		607FADFC2AA092C10060E55C /* TopicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicViewController.swift; sourceTree = "<group>"; };
 		607FADFE2AA09F4F0060E55C /* SubtopicTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtopicTableViewController.swift; sourceTree = "<group>"; };
+		607FAE002AA0A1E40060E55C /* DetailedInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedInfoViewController.swift; sourceTree = "<group>"; };
 		60EB59D72AA07F6A00A60396 /* OwnersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnersViewController.swift; sourceTree = "<group>"; };
 		B8125B032A9FDF44005A3184 /* SwiftApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8125B062A9FDF44005A3184 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				607FADFA2AA091DD0060E55C /* SettingsViewController.swift */,
 				607FADFC2AA092C10060E55C /* TopicViewController.swift */,
 				607FADFE2AA09F4F0060E55C /* SubtopicTableViewController.swift */,
+				607FAE002AA0A1E40060E55C /* DetailedInfoViewController.swift */,
 				B8125B0C2A9FDF44005A3184 /* Main.storyboard */,
 				B8125B0F2A9FDF45005A3184 /* Assets.xcassets */,
 				B8125B112A9FDF45005A3184 /* LaunchScreen.storyboard */,
@@ -154,6 +157,7 @@
 				B8125B072A9FDF44005A3184 /* AppDelegate.swift in Sources */,
 				607FADFF2AA09F4F0060E55C /* SubtopicTableViewController.swift in Sources */,
 				607FADFD2AA092C10060E55C /* TopicViewController.swift in Sources */,
+				607FAE012AA0A1E40060E55C /* DetailedInfoViewController.swift in Sources */,
 				60EB59D82AA07F6A00A60396 /* OwnersViewController.swift in Sources */,
 				607FADFB2AA091DD0060E55C /* SettingsViewController.swift in Sources */,
 				B8125B092A9FDF44005A3184 /* SceneDelegate.swift in Sources */,
