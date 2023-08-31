@@ -44,12 +44,32 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ruw-eX-eR5">
-                        <barButtonItem key="rightBarButtonItem" image="gearshape" catalog="system" id="W58-cX-XOp"/>
+                        <barButtonItem key="rightBarButtonItem" image="gearshape" catalog="system" id="W58-cX-XOp">
+                            <connections>
+                                <segue destination="4cz-rB-2DC" kind="show" id="q3B-bG-b4Z"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="798" y="-2"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="Zex-77-Nbe">
+            <objects>
+                <viewController id="4cz-rB-2DC" customClass="SettingsViewController" customModule="SwiftApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v9r-xD-tGy">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="C9G-AY-LGe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="CCq-4Z-iyS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BIe-JH-uA2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1561" y="263"/>
         </scene>
         <!--Owners View Controller-->
         <scene sceneID="br2-iK-uXl">
