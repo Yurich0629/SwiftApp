@@ -23,6 +23,9 @@
                                         <rect key="frame" x="0.0" y="0.0" width="398" height="34.333333333333336"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Начать обучение"/>
+                                        <connections>
+                                            <segue destination="VTr-AK-UlM" kind="show" id="4zh-HV-Tgg"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hlh-hx-b4h">
                                         <rect key="frame" x="0.0" y="42.333333333333314" width="398" height="34.333333333333343"/>
@@ -54,6 +57,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="798" y="-2"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="C3c-1w-pRJ">
+            <objects>
+                <viewController id="VTr-AK-UlM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v1o-lm-Di1">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Lpg-45-fVy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="KiI-f8-EPW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4OU-n4-Gtm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1548" y="-386"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="Zex-77-Nbe">
