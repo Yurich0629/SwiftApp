@@ -76,6 +76,9 @@
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="ButtonOne"/>
                                         <buttonConfiguration key="configuration" style="plain" title="ButtonOne"/>
+                                        <connections>
+                                            <segue destination="N1R-ff-oPs" kind="show" id="O2a-Rd-iN8"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g9V-oD-hMm">
                                         <rect key="frame" x="129.33333333333334" y="0.0" width="102.33333333333334" height="101.33333333333333"/>
@@ -118,6 +121,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4OU-n4-Gtm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1548" y="-386"/>
+        </scene>
+        <!--Subtopic Table View Controller-->
+        <scene sceneID="X1A-dW-cFE">
+            <objects>
+                <tableViewController id="N1R-ff-oPs" customClass="SubtopicTableViewController" customModule="SwiftApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Rk6-YQ-cIP">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="RDX-vT-Wdj">
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RDX-vT-Wdj" id="Sgj-9c-YNc">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="N1R-ff-oPs" id="3Ie-GS-Tl7"/>
+                            <outlet property="delegate" destination="N1R-ff-oPs" id="DUu-On-cIO"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="bQz-PT-IMX"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jh8-0C-JIs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2286" y="-387"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="Zex-77-Nbe">
