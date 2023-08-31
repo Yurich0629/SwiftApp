@@ -131,13 +131,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="RDX-vT-Wdj">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="subtopicCell" id="RDX-vT-Wdj">
                                 <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RDX-vT-Wdj" id="Sgj-9c-YNc">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="RBM-FN-95G" kind="show" id="Sym-pG-wIo"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -151,16 +154,17 @@
             </objects>
             <point key="canvasLocation" x="2286" y="-387"/>
         </scene>
-        <!--View Controller-->
+        <!--Detailed Info View Controller-->
         <scene sceneID="Rn2-U0-gup">
             <objects>
-                <viewController id="RBM-FN-95G" sceneMemberID="viewController">
+                <viewController id="RBM-FN-95G" customClass="DetailedInfoViewController" customModule="SwiftApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hEk-UE-5rq">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="btM-aY-Ozg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="OXi-8G-wFz"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AM4-vw-Ii9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
