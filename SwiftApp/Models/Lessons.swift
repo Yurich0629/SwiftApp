@@ -15,7 +15,11 @@ struct Lesson {
         [
             Lesson(
                 title: "Введение",
-                text: "",
+                text: """
+                «Swift — это быстрый, современный, безопасный и удобный язык программирования. С его помощью процесс создания программ становится очень гибким и продуктивным, так как Swift вобрал в себя лучшее из таких языков, как C, Objective-C и Java. Swift на редкость удобен для изучения, восприятия и чтения кода. У него очень перспективное будущее.
+
+                    Изучая Swift, вы удивитесь, насколько он превосходит другие языки программирования, на которых вы раньше писали. Его простота, лаконичность и невероятные возможности просто поразительны!»
+                """,
                 images: ["image1", "image2"],
                 question: Question.getQuestions()[0]
             ),
@@ -29,7 +33,8 @@ struct Lesson {
                 title: "Операторы Swift",
                 text: "",
                 images: ["image4", "image5"],
-                question: Question.getQuestions()[2])
+                question: Question.getQuestions()[2]
+            )
         ]
     }
     
@@ -39,7 +44,7 @@ struct Question {
     let title: String
     let answers: [Answer]
     
-    static func getQuestions () -> [Question] {
+    static func getQuestions() -> [Question] {
         [
             Question(
                 title: "Вопрос вводного урока",
