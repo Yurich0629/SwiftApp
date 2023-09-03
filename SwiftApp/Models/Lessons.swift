@@ -25,13 +25,43 @@ struct Lesson {
             ),
             Lesson(
                 title: "Свойства: переменные и константы.",
-                text: "",
+                text: """
+                Всего в Swift выделяют два вида хранилищ данных:
+
+                    •    переменные, объявляемые с помощью ключевого слова var;
+
+                    •    константы, объявляемые с помощью ключевого слова let.
+
+                    Любое хранилище, неважно, какого вида, имеет три важнейших свойства:
+
+                    1)    имя, по которому можно проинициализировать новое или получить записанное ранее значение. Ранее мы назвали его идентификатором;
+
+                    2)    тип данных, определяющий множество значений, которые могут храниться в этом хранилище (целые числа, строки и т.д.);
+
+                    3)    значение, которое в данный момент находится в хранилище.
+                """,
                 images: ["image3"],
                 question: Question.getQuestions()[1]
             ),
             Lesson(
                 title: "Операторы Swift",
-                text: "",
+                text: """
+                В Swift существуют следующие виды операторов:
+
+                    •    Простые операторы, выполняющие операции со значениями (операндами). В их состав входят унарные и бинарные операторы.
+
+                    •    Унарные операторы выполняют операцию с одним операндом. Они могут находиться перед операндом (префиксные) или после него (постфиксные).
+
+                    Оператор var, с помощью которого объявляется хранилище данных, или оператор минус (-a), с помощью которого создаются отрицательные числа, являются унарными префиксными.
+
+                    Далее в книге будут рассмотрены примеры постфиксных операторов, например, многоточие (...) в выражении 1... указывает на все целые числа после единицы.
+
+                    •    Бинарные операторы выполняют операцию с двумя операндами. Оператор, который располагается между операндами, называется инфиксным.
+
+                    Оператор инициализации (=) и оператор сложения (+) являются бинарными инфиксными, так как использует в работе два операнда и находятся между ними (value1=12 или 34+12).
+
+                    •    Структурные операторы влияют на ход выполнения программы. Например, останавливают выполнение программы при определенных условиях или указывают программе, какой блок кода должен быть выполнен при определенных условиях. Подробно структурные операторы будут рассмотрены в главе «Операторы управления».
+                """,
                 images: ["image4", "image5"],
                 question: Question.getQuestions()[2]
             )
@@ -49,28 +79,28 @@ struct Question {
             Question(
                 title: "Вопрос вводного урока",
                 answers: [
-                    Answer(text: "Ответ 1", correctAnswer: true),
-                    Answer(text: "Ответ 2", correctAnswer: false),
-                    Answer(text: "Ответ 3", correctAnswer: false),
-                    Answer(text: "Ответ 4", correctAnswer: false)
+                    Answer(text: "Ответ 1", isCorrectAnswer: true),
+                    Answer(text: "Ответ 2", isCorrectAnswer: false),
+                    Answer(text: "Ответ 3", isCorrectAnswer: false),
+                    Answer(text: "Ответ 4", isCorrectAnswer: false)
                 ]
             ),
             Question(
                 title: "Вопрос 1го урока",
                 answers: [
-                    Answer(text: "Ответ 1", correctAnswer: false),
-                    Answer(text: "Ответ 2", correctAnswer: false),
-                    Answer(text: "Ответ 3", correctAnswer: true),
-                    Answer(text: "Ответ 4", correctAnswer: false),
+                    Answer(text: "Ответ 1", isCorrectAnswer: false),
+                    Answer(text: "Ответ 2", isCorrectAnswer: false),
+                    Answer(text: "Ответ 3", isCorrectAnswer: true),
+                    Answer(text: "Ответ 4", isCorrectAnswer: false),
                 ]
             ),
             Question(
                 title: "Вопрос 2го урока",
                 answers: [
-                    Answer(text: "Ответ 1", correctAnswer: false),
-                    Answer(text: "Ответ 2", correctAnswer: false),
-                    Answer(text: "Ответ 3", correctAnswer: false),
-                    Answer(text: "Ответ 4", correctAnswer: true),
+                    Answer(text: "Ответ 1", isCorrectAnswer: false),
+                    Answer(text: "Ответ 2", isCorrectAnswer: false),
+                    Answer(text: "Ответ 3", isCorrectAnswer: false),
+                    Answer(text: "Ответ 4", isCorrectAnswer: true),
                 ]
             )
             
@@ -80,5 +110,5 @@ struct Question {
 
 struct Answer {
     let text: String
-    let correctAnswer: Bool
+    let isCorrectAnswer: Bool
 }
