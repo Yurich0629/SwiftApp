@@ -9,21 +9,24 @@ import UIKit
 
 final class SettingsViewController: UIViewController {
 
+    @IBOutlet var blackButton: UIButton!
+    @IBOutlet var grayButton: UIButton!
+    @IBOutlet var brownButton: UIButton!
+    @IBOutlet var whiteButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        blackButton.layer.cornerRadius = blackButton.frame.height / 2
+        grayButton.layer.cornerRadius = grayButton.frame.height / 2
+        brownButton.layer.cornerRadius = brownButton.frame.height / 2
+        whiteButton.layer.cornerRadius = whiteButton.frame.height / 2
+        
+        whiteButton.layer.borderColor = UIColor.black.cgColor
+        whiteButton.layer.borderWidth = 0.5
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func setColorDidTapped(_ sender: UIButton) {
+        
+        }
     }
-    */
 
-}

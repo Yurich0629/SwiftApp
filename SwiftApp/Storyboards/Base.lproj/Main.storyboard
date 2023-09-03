@@ -265,6 +265,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="CCq-4Z-iyS"/>
+                    <connections>
+                        <outlet property="blackButton" destination="xlh-uY-EYG" id="ngx-HU-lHr"/>
+                        <outlet property="brownButton" destination="hGn-ex-Apv" id="LrE-7P-jeu"/>
+                        <outlet property="grayButton" destination="0Y3-kc-Nhb" id="7cd-Ow-70I"/>
+                        <outlet property="whiteButton" destination="Ihh-ai-hXB" id="qLX-UQ-yXx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BIe-JH-uA2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
