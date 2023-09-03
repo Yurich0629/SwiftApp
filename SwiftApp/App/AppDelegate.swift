@@ -10,10 +10,13 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        AppTheme.backgroundColor = .white
+        AppTheme.textColor = .black
+        updateAppearance()
         return true
     }
 
@@ -30,7 +33,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
-
-
+    
+    func updateAppearance() {
+              let windowScenes = UIApplication.shared.connectedScenes.compactMap { $0 as? UIWindowScene }
+              
+              for windowScene in windowScenes {
+                  for window in windowScene.windows {
+                      window.backgroundColor = AppTheme.backgroundColor
+                  }
+              }
+          
+          UILabel.appearance().textColor = AppTheme.textColor
+      }
 }
 
