@@ -162,7 +162,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wc9-4c-Bde">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wc9-4c-Bde">
                                 <rect key="frame" x="16" y="103" width="361" height="715"/>
                                 <viewLayoutGuide key="contentLayoutGuide" id="FTG-cy-Alt"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="hQI-bH-1b5"/>
@@ -388,6 +388,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="we9-vW-a6h">
+                                <rect key="frame" x="16" y="740.66666666666663" width="361" height="34.333333333333371"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Вернуться на главный экран"/>
+                                <connections>
+                                    <action selector="cancelButtonDidTapped" destination="foO-MB-pNw" eventType="touchUpInside" id="9ic-EY-zoB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fEu-mX-XNJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -397,14 +405,22 @@
                             <constraint firstItem="4qg-7o-Fkh" firstAttribute="top" secondItem="W1w-el-zLu" secondAttribute="bottom" constant="20" id="5oi-oV-pdU"/>
                             <constraint firstAttribute="trailing" secondItem="4qg-7o-Fkh" secondAttribute="trailing" constant="16" id="7rD-2G-b0s"/>
                             <constraint firstAttribute="trailing" secondItem="SjT-KP-MRc" secondAttribute="trailing" constant="16" id="Gxu-UL-9d0"/>
+                            <constraint firstItem="fEu-mX-XNJ" firstAttribute="trailing" secondItem="we9-vW-a6h" secondAttribute="trailing" constant="16" id="Kdt-bP-pSi"/>
                             <constraint firstItem="4qg-7o-Fkh" firstAttribute="height" secondItem="3ml-JF-5Wd" secondAttribute="height" multiplier="0.342733" id="SJM-gR-WtP"/>
                             <constraint firstItem="SjT-KP-MRc" firstAttribute="leading" secondItem="fEu-mX-XNJ" secondAttribute="leading" constant="16" id="X8f-lD-nlA"/>
                             <constraint firstItem="4qg-7o-Fkh" firstAttribute="centerY" secondItem="3ml-JF-5Wd" secondAttribute="centerY" multiplier="0.7" id="ZrL-bD-zQa"/>
                             <constraint firstItem="W1w-el-zLu" firstAttribute="leading" secondItem="fEu-mX-XNJ" secondAttribute="leading" constant="16" id="aVr-Pe-c0I"/>
                             <constraint firstItem="fEu-mX-XNJ" firstAttribute="trailing" secondItem="W1w-el-zLu" secondAttribute="trailing" constant="16" id="fT2-1m-101"/>
+                            <constraint firstItem="we9-vW-a6h" firstAttribute="centerY" secondItem="3ml-JF-5Wd" secondAttribute="centerY" multiplier="1.8" id="hcO-vG-k1I"/>
+                            <constraint firstItem="we9-vW-a6h" firstAttribute="leading" secondItem="fEu-mX-XNJ" secondAttribute="leading" constant="16" id="ttf-2S-UhS"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="rlu-2k-ret"/>
+                    <connections>
+                        <outlet property="genaImageView" destination="w4H-jp-39b" id="rOS-rq-fgs"/>
+                        <outlet property="iliyaImageView" destination="qcE-QM-StX" id="V7V-Z5-2xQ"/>
+                        <outlet property="semenImageView" destination="NYO-7n-TIO" id="a8v-rv-za4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v58-I1-0Kp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
