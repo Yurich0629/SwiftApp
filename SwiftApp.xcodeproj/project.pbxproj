@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6012E44E2AA448F10044371B /* AppStylesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6012E44D2AA448F10044371B /* AppStylesManager.swift */; };
 		607FADFB2AA091DD0060E55C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FADFA2AA091DD0060E55C /* SettingsViewController.swift */; };
 		607FADFD2AA092C10060E55C /* TopicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FADFC2AA092C10060E55C /* TopicViewController.swift */; };
 		607FADFF2AA09F4F0060E55C /* SubtopicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FADFE2AA09F4F0060E55C /* SubtopicTableViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6012E44D2AA448F10044371B /* AppStylesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStylesManager.swift; sourceTree = "<group>"; };
 		607FADFA2AA091DD0060E55C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		607FADFC2AA092C10060E55C /* TopicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicViewController.swift; sourceTree = "<group>"; };
 		607FADFE2AA09F4F0060E55C /* SubtopicTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtopicTableViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6012E44F2AA448FB0044371B /* AppStylesManagers */ = {
+			isa = PBXGroup;
+			children = (
+				6012E44D2AA448F10044371B /* AppStylesManager.swift */,
+			);
+			path = AppStylesManagers;
+			sourceTree = "<group>";
+		};
 		607FAE022AA0A3370060E55C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +119,7 @@
 				607FAE052AA0A39A0060E55C /* App */,
 				607FAE022AA0A3370060E55C /* ViewControllers */,
 				607FAE032AA0A34A0060E55C /* Storyboards */,
+				6012E44F2AA448FB0044371B /* AppStylesManagers */,
 				607FAE042AA0A3670060E55C /* Resources */,
 			);
 			path = SwiftApp;
@@ -189,6 +200,7 @@
 				B8125B072A9FDF44005A3184 /* AppDelegate.swift in Sources */,
 				607FADFF2AA09F4F0060E55C /* SubtopicTableViewController.swift in Sources */,
 				607FADFD2AA092C10060E55C /* TopicViewController.swift in Sources */,
+				6012E44E2AA448F10044371B /* AppStylesManager.swift in Sources */,
 				607FAE012AA0A1E40060E55C /* DetailedInfoViewController.swift in Sources */,
 				60EB59D82AA07F6A00A60396 /* OwnersViewController.swift in Sources */,
 				607FADFB2AA091DD0060E55C /* SettingsViewController.swift in Sources */,
