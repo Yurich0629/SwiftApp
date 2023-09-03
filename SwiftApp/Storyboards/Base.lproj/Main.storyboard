@@ -59,10 +59,10 @@
             </objects>
             <point key="canvasLocation" x="798" y="-2"/>
         </scene>
-        <!--View Controller-->
+        <!--Topic View Controller-->
         <scene sceneID="C3c-1w-pRJ">
             <objects>
-                <viewController id="VTr-AK-UlM" sceneMemberID="viewController">
+                <viewController id="VTr-AK-UlM" customClass="TopicViewController" customModule="SwiftApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="v1o-lm-Di1">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -117,6 +117,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="KiI-f8-EPW"/>
+                    <connections>
+                        <outlet property="dataHandlingButton" destination="PX9-id-qRe" id="yGA-aF-bif"/>
+                        <outlet property="programmingButton" destination="1dh-1j-b1S" id="KO3-rM-X3M"/>
+                        <outlet property="titleLabel" destination="A04-IP-agg" id="TqU-D7-Oea"/>
+                        <outlet property="uiKitButton" destination="g9V-oD-hMm" id="wVw-1h-O4u"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4OU-n4-Gtm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -161,21 +167,8 @@
                     <view key="view" contentMode="scaleToFill" id="hEk-UE-5rq">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wc9-4c-Bde">
-                                <rect key="frame" x="16" y="103" width="361" height="715"/>
-                                <viewLayoutGuide key="contentLayoutGuide" id="FTG-cy-Alt"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="hQI-bH-1b5"/>
-                            </scrollView>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="btM-aY-Ozg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="Wc9-4c-Bde" firstAttribute="top" secondItem="btM-aY-Ozg" secondAttribute="top" id="Cc1-7v-lOZ"/>
-                            <constraint firstItem="Wc9-4c-Bde" firstAttribute="leading" secondItem="btM-aY-Ozg" secondAttribute="leading" constant="16" id="IHw-Ue-81t"/>
-                            <constraint firstItem="btM-aY-Ozg" firstAttribute="trailing" secondItem="Wc9-4c-Bde" secondAttribute="trailing" constant="16" id="Jq0-PV-leU"/>
-                            <constraint firstItem="Wc9-4c-Bde" firstAttribute="bottom" secondItem="btM-aY-Ozg" secondAttribute="bottom" id="Mbj-94-1ZC"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="OXi-8G-wFz"/>
                 </viewController>
@@ -229,6 +222,9 @@
                                                 <state key="normal" image="checkmark.circle" catalog="system">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="setColorDidTapped:" destination="4cz-rB-2DC" eventType="touchUpInside" id="oP0-mJ-iXy"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hGn-ex-Apv">
                                                 <rect key="frame" x="57.999999999999986" y="0.0" width="50" height="50"/>
@@ -236,6 +232,9 @@
                                                 <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="checkmark.circle" catalog="system"/>
+                                                <connections>
+                                                    <action selector="setColorDidTapped:" destination="4cz-rB-2DC" eventType="touchUpInside" id="fRJ-cU-1WI"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Y3-kc-Nhb">
                                                 <rect key="frame" x="116" y="0.0" width="50" height="50"/>
@@ -243,6 +242,9 @@
                                                 <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="checkmark.circle" catalog="system"/>
+                                                <connections>
+                                                    <action selector="setColorDidTapped:" destination="4cz-rB-2DC" eventType="touchUpInside" id="yK4-mU-60E"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xlh-uY-EYG">
                                                 <rect key="frame" x="174" y="0.0" width="50" height="50"/>
@@ -250,6 +252,9 @@
                                                 <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="" image="checkmark.circle" catalog="system"/>
+                                                <connections>
+                                                    <action selector="setColorDidTapped:" destination="4cz-rB-2DC" eventType="touchUpInside" id="dqg-BJ-Nzh"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -269,6 +274,8 @@
                         <outlet property="blackButton" destination="xlh-uY-EYG" id="ngx-HU-lHr"/>
                         <outlet property="brownButton" destination="hGn-ex-Apv" id="LrE-7P-jeu"/>
                         <outlet property="grayButton" destination="0Y3-kc-Nhb" id="7cd-Ow-70I"/>
+                        <outlet property="maxSizeFont" destination="hcZ-kF-ghV" id="ZGT-yb-egB"/>
+                        <outlet property="minSizeFont" destination="Uv3-we-w2j" id="JQj-Cp-rsj"/>
                         <outlet property="whiteButton" destination="Ihh-ai-hXB" id="qLX-UQ-yXx"/>
                     </connections>
                 </viewController>
@@ -423,9 +430,18 @@
                     </view>
                     <navigationItem key="navigationItem" id="rlu-2k-ret"/>
                     <connections>
+                        <outlet property="aboutProject" destination="tjc-Op-b0z" id="0sM-Ng-Utq"/>
+                        <outlet property="bioGenaLabel" destination="rXo-2e-Lew" id="wJ4-5F-vS9"/>
+                        <outlet property="bioIliyaLabel" destination="5UI-xr-2l2" id="Vr1-yM-2OE"/>
+                        <outlet property="bioSemenLabel" destination="fFD-to-goN" id="ec7-sb-PBL"/>
                         <outlet property="genaImageView" destination="w4H-jp-39b" id="rOS-rq-fgs"/>
+                        <outlet property="genaNameLabel" destination="0mh-B5-loG" id="YF1-pD-Fgp"/>
                         <outlet property="iliyaImageView" destination="qcE-QM-StX" id="V7V-Z5-2xQ"/>
+                        <outlet property="iliyaNameLabel" destination="1rx-Na-xbJ" id="zvT-Sj-x4a"/>
                         <outlet property="semenImageView" destination="NYO-7n-TIO" id="a8v-rv-za4"/>
+                        <outlet property="semenNameLabel" destination="GWU-Al-8CS" id="Pd8-Tk-yHs"/>
+                        <outlet property="titleAboutProject" destination="wCa-pl-dBy" id="xRX-Ts-Ksy"/>
+                        <outlet property="titleOwnerLabel" destination="W1w-el-zLu" id="w6t-rL-2Ee"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v58-I1-0Kp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
