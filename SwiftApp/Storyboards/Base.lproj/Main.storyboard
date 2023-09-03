@@ -219,7 +219,7 @@
                                                 </constraints>
                                                 <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" image="checkmark.circle" catalog="system">
+                                                <state key="normal">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -231,7 +231,6 @@
                                                 <color key="backgroundColor" systemColor="systemBrownColor"/>
                                                 <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" image="checkmark.circle" catalog="system"/>
                                                 <connections>
                                                     <action selector="setColorDidTapped:" destination="4cz-rB-2DC" eventType="touchUpInside" id="fRJ-cU-1WI"/>
                                                 </connections>
@@ -241,7 +240,6 @@
                                                 <color key="backgroundColor" systemColor="systemGrayColor"/>
                                                 <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" image="checkmark.circle" catalog="system"/>
                                                 <connections>
                                                     <action selector="setColorDidTapped:" destination="4cz-rB-2DC" eventType="touchUpInside" id="yK4-mU-60E"/>
                                                 </connections>
@@ -251,7 +249,7 @@
                                                 <color key="backgroundColor" systemColor="labelColor"/>
                                                 <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" title="" image="checkmark.circle" catalog="system"/>
+                                                <state key="normal" title=""/>
                                                 <connections>
                                                     <action selector="setColorDidTapped:" destination="4cz-rB-2DC" eventType="touchUpInside" id="dqg-BJ-Nzh"/>
                                                 </connections>
@@ -468,7 +466,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="checkmark.circle" catalog="system" width="128" height="123"/>
         <image name="gearshape" catalog="system" width="128" height="123"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
